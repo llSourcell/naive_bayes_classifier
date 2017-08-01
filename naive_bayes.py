@@ -1,3 +1,9 @@
+from sklearn.model_selection import train_test_split
+# Data from https://github.com/stedy/Machine-Learning-with-R-datasets
+data = pd.read_csv('sms_spam.csv')
+y = data['type']
+X = data['text']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 
 #creating a spam model
 #runs once on a training data
