@@ -1,7 +1,7 @@
 
 #creating a spam model
 #runs once on a training data
-def train:
+def train(trainData):
   total = 0
   numSpam = 0
   for email in trainData:
